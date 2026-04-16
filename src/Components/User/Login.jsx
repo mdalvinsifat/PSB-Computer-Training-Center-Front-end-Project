@@ -68,7 +68,7 @@ const Login = () => {
     dispatch(loginStart());
 
     try {
-      const response = await fetch("http://localhost:3000/auth/login", {
+      const response = await fetch("https://psb-computer-training-center-back-e-nine.vercel.app/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -110,6 +110,15 @@ const Login = () => {
               <h1 className="text-3xl font-bold mb-2">Login Account</h1>
               <p className="text-blue-100">Join our community and start your journey</p>
             </div>
+
+         
+         <div className="text-2xl  text-blue-500 text-center">
+   <h1> Admin : admin@gmail.com</h1>
+            <h1> password : admin12</h1>
+         </div>
+
+
+
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">

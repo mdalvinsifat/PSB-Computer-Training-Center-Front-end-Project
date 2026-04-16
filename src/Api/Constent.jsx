@@ -1,2 +1,2 @@
 
-export const API = "http://localhost:3000"
+export const API = "https://psb-computer-training-center-back-e-nine.vercel.app"

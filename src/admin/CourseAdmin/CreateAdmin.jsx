@@ -60,7 +60,7 @@ const CreateAdmin = () => {
 
       console.log('Sending data to:', `${API}/course`);
       
-      const response = await axios.post("http://localhost:3000/course", data, {
+      const response = await axios.post("https://psb-computer-training-center-back-e-nine.vercel.app/course", data, {
         headers: {
           'Content-Type': 'multipart/form-data'
         },

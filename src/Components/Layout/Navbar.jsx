@@ -17,7 +17,7 @@ const Navbar = () => {
     try {
       const token = localStorage.getItem("token");
 
-      await fetch("http://localhost:3000/auth/logout", {
+      await fetch("https://psb-computer-training-center-back-e-nine.vercel.app/auth/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

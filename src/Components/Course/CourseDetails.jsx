@@ -15,7 +15,7 @@ const CourseDetails = () => {
 
     const fetchCourseDetails = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/course/${id}`);
+            const response = await fetch(`https://psb-computer-training-center-back-e-nine.vercel.app/course/${id}`);
             if (!response.ok) throw new Error('Course not found');
             const data = await response.json();
             setCourse(data);

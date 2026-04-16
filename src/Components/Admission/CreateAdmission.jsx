@@ -32,7 +32,7 @@ function CreateAdmission() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/admission", {
+      const response = await fetch("https://psb-computer-training-center-back-e-nine.vercel.app/admission", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
